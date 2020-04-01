@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My dog Breed App</title>
+</head>
+<body>
+    <center>
+        <img src=" {{url_for("static", filename = image_name)}}" style="width:512px;height:512px;">
+    </center>
+    <div, style = "text-align: center;">
+        <h2>Prediction</h2>
+    </div>    
+    <p>Dog Breed <tab style="white-space:pre">                              </tab> Prediction</p>
+    <p>    
+        {% for i in range(5) %}
+            <tr>
+                <td>{{ breed[i] }} <tab style="white-space:pre">                            </tab> {{ probability[i] }}</td>
+                <br>
+            </tr>
+        {% endfor %}
+    </p>
+</body>
+</html>

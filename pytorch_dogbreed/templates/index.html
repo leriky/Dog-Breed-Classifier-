@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Dog Breed App</title>
+</head>
+<body>
+    <div, style = "text-align: center;">
+        <h2>Upload your dog image</h2>
+    </div>
+    <form id = "upload-form" action = "{{ url_for("result") }}" method="POST" enctype="multipart/form-data">
+        <div style="text-align: center;">
+            <input type = "file" name = "file" accept = "image/*" multiple>
+            <input type = "submit" value = "upload">
+        </div>       
+    </form>
+</body>
+</html>
